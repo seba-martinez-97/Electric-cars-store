@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    .nav ul li {
+       
+        list-style: none;
+      }
+
+      .nav {
+        
+        grid-area: menu;
+        background-color: rgb(0, 255, 42); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(0, 0, 0); 
+        padding-top: 0rem; 
+      }
+
+      .menu-barra{
+
+        padding-top: 2rem;
+      }
+
+      
+      header {
+        grid-area: header;
+      }
+
+      
+      main {
+        grid-area: principal; 
+        display: flex;
+        justify-content: space-around; 
+        overflow-y: scroll;
+      }
+
+      
+      footer {
+        grid-area: pie-pagina; 
+        background-color: rgb(31, 31, 149);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white; 
+      }
+
+      
+      .paginas {
+        margin-top: 10px; 
+        grid-area: paginas; 
+        display: flex;
+        justify-content: center; 
+      }
+
+      
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "menu header"
+          "menu principal"
+          "menu principal"
+          "pie-pagina paginas";
+        grid-template-columns: 10rem 3fr; 
+        grid-template-rows: 1fr 20fr 1fr; 
+        height: 100vh; 
+      }
+
+      
+      .icons {
+        display: flex;
+        justify-content: space-around; 
+        
+      }
+
+      
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 10px; 
+        height: 50%;
+        padding-top: 2rem;
+      }
+
+      
+      .menu-burger {
+        display: none; 
+      }
+
+     
+      @media (max-width: 576px) {
+     
+        .grid-container {
+          display: block;
+        }
+
+        
+        .galeria {
+          grid-template-columns: 1fr; 
+          gap: 10px; 
+        }
+
+        
+        .nav {
+          padding-top: 0;
+          flex-direction: row; 
+          justify-content: space-around; 
+        }
+
+       
+        .nav ul {
+          display: none;
+        }
+
+        
+        .menu-burger {
+          display: block;
+        }
+      }
+
+      .card-title{
+        display: flex;
+        justify-content: center;
+      }
+
+      .boton{
+        display: flex;
+        justify-content: center;
+      }
+      
+      .text{
+        display: flex;
+        justify-content: center;
+      }
+      .container{
+        padding-top: 2rem;
+      }
